@@ -1,0 +1,42 @@
+{% include start.html %}
+{% include nav.html %}
+
+
+<!-- BREADCRUMBS -->
+<section class="h-border-solid-bottom h-border-color-calm h-cb-cream">
+  <div class="row align-middle">
+    <div class="large-12 medium-12 small-12 columns">
+      <p class="h-tx-center-small h-tx-subtle">
+        ↳ <a href="/blog">Blog</a> / {{ page.title  | truncate: 35 }}
+      </p>
+    </div>
+  </div>
+</section>
+<!-- END BREADCRUMBS -->
+
+
+<div class="h-cb-cream">
+  <div class="row align-center h-padding-tb4">
+    <div class="large-10 medium-11 small-12 columns">
+      <main role="main">
+        <article>
+          <img src="{{ page.thumbnail }}"/>
+          <h1 class="h-margin-none-b">{{ page.title }}</h1>
+          <p class="h-tx-spaced h-tx-subtle">
+            Published by: {{ page.author }}
+          </p>
+          <p class="h-tx-spaced h-tx-subtle">
+            {{ page.date | date: '%B %d, %Y' }}
+          </p>
+          <hr/>
+          {{ content }}
+        </article>
+        <div class="h-margin-t4 h-padding-1 h-cb-white h-border-solid h-border-color-calm">
+          <span><strong class="h-tx-spaced">About the Author - {{ page.author }}</strong></span><br/>
+          <p class="h-tx-small">{{ page.bio }}</p>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+{% include end.html %}

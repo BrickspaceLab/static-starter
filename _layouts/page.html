@@ -1,0 +1,32 @@
+{% include start.html %}
+{% include nav.html %}
+<div>
+  <main role="main">
+    <article>
+
+      <!-- HEADER -->
+      <section class="h-padding-tb2">
+        <div class="row align-center">
+
+          <div class="large-12 medium-12 small-12 columns">
+            <h1 class="margin-none">{{page.title}}</h1>
+          </div>
+
+        </div>
+      </section>
+      <!-- END HEADER -->
+
+      <!-- CONTENT -->
+      <section class="m-section">
+        <div class="row">
+          <div class="large-8 medium-10 small-12 columns">
+            {{ content }}
+          </div>
+        </div>
+      </section>
+      <!-- END CONTENT -->
+
+    </article>
+  </main>
+</div>
+{% include end.html %}

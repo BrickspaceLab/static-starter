@@ -1,0 +1,123 @@
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="m-section">
+  <div class="row">
+    <div class="large-6 medium-6 small-12 columns h-tx-center-small">
+      <div class="row h-tablet-up">
+        <div class="large-4 medium-4 small-12 columns">
+          <p class="h-margin-none">
+            <a class="h-tx-dark" href="/">Home</a><br/>
+            <a class="h-tx-dark" href="/services">Services</a><br/>
+            <a class="h-tx-dark" href="/quote">Quote</a>
+          </p>
+        </div>
+        <div class="large-4 medium-4 small-12 columns">
+          <p class="h-margin-none">
+            <a class="h-tx-dark" href="/blog">Blog</a><br/>
+            <a class="h-tx-dark" href="/apps/directory">Apps</a>
+          </p>
+        </div>
+        <div class="large-4 medium-4 small-12 columns">
+          <p class="h-margin-none">
+            <a class="h-tx-dark" href="https://www.facebook.com/" target="_blank">Facebook</a><br/>
+            <a class="h-tx-dark" href="https://www.instagram.com/" target="_blank">Instagram</a><br/>
+            <a class="h-tx-dark" href="https://dribbble.com/" target="_blank">Dribbble</a>
+          </p>
+        </div>
+      </div>
+      <div class="row h-mobile-only">
+        <div class="small-12 columns">
+          <hr class="h-opacity-4 h-margin-none-t">
+          <a class="a-button--clear h-full" href="/">
+            Home
+          </a>
+          <hr class="h-opacity-4">
+          <a class="a-button--clear h-full" href="/services">
+            Services
+          </a>
+          <hr class="h-opacity-4">
+          <a class="a-button--clear h-full" href="/quote">
+            Quote
+          </a>
+          <hr class="h-opacity-4">
+          <a class="a-button--clear h-full" href="/blog">
+            Blog
+          </a>
+          <hr class="h-opacity-4">
+          <a class="a-button--clear h-full" href="/apps/directory">
+            Apps
+          </a>
+          <hr class="h-opacity-4">
+          <a class="a-button--clear h-full" href="https://www.facebook.com/" target="_blank">
+            Facebook
+          </a>
+          <hr class="h-opacity-4">
+          <a class="a-button--clear h-full" href="https://www.instagram.com/" target="_blank">
+            Instagram
+          </a>
+          <hr class="h-opacity-4">
+          <a class="a-button--clear h-full" href="https://dribbble.com/" target="_blank">
+            Dribbble
+          </a>
+          <hr class="h-opacity-4">
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="h-border-solid-top h-border-color-cream">
+  <div class="row h-padding-tb05">
+    <div class="large-6 small-12 columns h-tx-center-small">
+      <p class="h-tx-small h-margin-none">
+        <a class="h-tx-dark" href="mailto:hello@site.com">hello@site.com</a>
+      </p>
+    </div>
+    <div class="large-6 small-12 columns h-tx-right h-tx-center-small">
+      <p class="h-tx-subtle h-margin-none">Copyright © {{ 'now' | date: "%Y" }} [COMPANY] All rights reserved.</p>
+    </div>
+  </div>
+</div>
+<!-- END FOOTER -->
+
+
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.3.0"></script>
+<script src="/assets/js/script.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+{% if page.custom_js %}
+  {% for script in page.custom_js %}
+    <script src="/assets/js/{{ script }}.js"></script>
+  {% endfor %}
+{% endif %}
+<!-- END SCRIPTS -->
+
+
+<!-- STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Corporation",
+  "name": "[COMPANY]",
+  "alternateName": "[COMPANY]",
+  "url": "[URL]",
+  "logo": "[URL]siteicon.png",
+  "sameAs": [
+    "https://www.facebook.com/",
+    "https://twitter.com/",
+    "https://www.instagram.com//",
+    "https://github.com/",
+    "https://apps.shopify.com/partners/",
+    "https://medium.com/",
+    "https://dribbble.com/"
+  ]
+}
+</script>
+<!-- END STRUCTURED DATA -->
+
+
+</body>
+</html>
